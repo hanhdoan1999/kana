@@ -1,0 +1,239 @@
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about-page {
+  background-color: #f5f5f8;
+}
+.our-misson {
+  padding: 122px 95px 0 95px;
+}
+.our-misson h1 {
+  max-width: 60%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  margin-bottom: 25px;
+}
+.our-misson img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* OUR-VALUE */
+
+.our-value {
+  background-color: #f5f5f8;
+  padding: 95px;
+}
+.our-value .list-value {
+  max-width: 800px;
+  display: grid;
+  /* margin: 0 auto; */
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.our-value .list-value .value-item {
+  background-color: #fff;
+  padding: 25px;
+}
+.our-value .list-value .value-item h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.our-value .list-value .value-item .des {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.our-founding-story {
+  padding: 0 95px;
+  background-color: #fff;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.our-founding-story .our-story-right {
+  padding: 0 50px;
+}
+
+/* TEAM */
+
+.teams {
+  background-color: #f5f5f8;
+  padding: 100px 95px;
+}
+.teams h3 {
+  margin-bottom: 10px;
+}
+.teams .lst-team {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.teams a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: rgb(39, 38, 38);
+}
+.teams .lst-team .team-item {
+  background-color: #fff;
+}
+.teams .lst-team .team-item .team-item-image img {
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover;
+}
+.teams .lst-team .team-item .team-item-info {
+  padding: 20px;
+}
+.teams .lst-team .team-item .team-item-info .team-item-name {
+}
+.teams .lst-team .team-item .team-item-info .team-item-position {
+  margin: 5px 0;
+}
+.teams .lst-team .team-item .team-item-info .team-item-des {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  margin-bottom: 5px;
+}
+
+/* WANT-TO-BE */
+
+.want-to-be {
+  background-color: #fff;
+  padding: 150px 0;
+  text-align: center;
+}
+
+/* OUR-MONEY */
+
+.our-money {
+  background-color: #f5f5f8;
+  padding: 150px;
+  text-align: center;
+}
+
+.our-money .our-moneny-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.our-money .our-moneny-content .content-row1 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.our-money .our-moneny-content {
+  margin: 50px 0;
+}
+.our-money .our-moneny-content .content-row2 {
+  margin-top: 10px;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 7fr 3fr;
+}
+.the-press .list-press {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.the-press .list-press img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .teams .lst-team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-value .list-value {
+    max-width: initial;
+  }
+  .our-founding-story {
+    flex-direction: column;
+  }
+  .our-founding-story .our-story-left img {
+    width: 100%;
+    height: auto;
+  }
+  .our-founding-story .our-story-right {
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .teams,
+  .our-misson,
+  .our-value,
+  .want-to-be,
+  .our-money,
+  .our-founding-story {
+    padding: 70px 70px 20px 70px;
+  }
+  .teams .lst-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-misson img {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .teams,
+  .our-misson,
+  .our-value,
+  .want-to-be,
+  .our-money,
+  .our-founding-story {
+    padding: 50px 50px 10px 50px;
+  }
+  .teams .lst-team {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-value .list-value {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-misson h1 {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 400px) {
+  .teams,
+  .our-misson,
+  .our-value,
+  .want-to-be,
+  .our-money,
+  .our-founding-story {
+    padding: 20px;
+  }
+  .our-value .list-value,
+  .the-press .list-press {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
